@@ -2,7 +2,7 @@
  * Give your makefiles help
  * 
  * document your Makefile targets with `#: Help goes here` and you will get nice help with this:
- * @cat $(MAKEFILE_LIST) | deno run -q https://URL_GOES_HERE/help.ts
+ * @cat $(MAKEFILE_LIST) | deno run -q https://raw.githubusercontent.com/konsumer/deno-make-help/master/help.ts
  * 
  */
 
