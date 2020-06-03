@@ -35,4 +35,4 @@ Which makes help like this:
 ![screenshot](./screenshot.png)
 
 
-Since `help` is the first target, when a user calls `make` or `make help` they will get a nice help. You can comment your targets by starting a line with `#: ` above a target, as I have done above, with `help`
+Since `help` is the first target, when a user calls `make` or `make help` they will get a nice help. You can comment your targets by starting a line with `#: ` above a target, as I have done above.
