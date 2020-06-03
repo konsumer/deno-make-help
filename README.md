@@ -12,7 +12,7 @@ Make a `Makefile` in your project that sort of looks like this:
 
 #: Show this help
 help:
-	@cat $(MAKEFILE_LIST) | deno run -q https://URL_GOES_HERE/help.ts
+	@cat $(MAKEFILE_LIST) | deno run -q https://raw.githubusercontent.com/konsumer/deno-make-help/master/help.ts
 
 #: Build library into a bundle for distribution
 build: bundle.ts
@@ -30,4 +30,9 @@ bundle.ts: main.ts
 	deno bundle --unstable  main.ts > bundle.ts
 ```
 
-Since `help` is the first target, when a user calls `make` or `make help` they will get a nice help. Yiou can comment your targets by starting a line with `#: ` aboive a target, as I have done above, with `help`
+Which makes help like this:
+
+![screenshot](./screenshot.png)
+
+
+Since `help` is the first target, when a user calls `make` or `make help` they will get a nice help. You can comment your targets by starting a line with `#: ` above a target, as I have done above, with `help`
