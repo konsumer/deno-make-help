@@ -12,7 +12,7 @@ Make a `Makefile` in your project that sort of looks like this:
 
 #: Show this help
 help:
-	@cat $(MAKEFILE_LIST) | deno run -q https://raw.githubusercontent.com/konsumer/deno-make-help/master/help.ts
+	@cat $(MAKEFILE_LIST) | deno run -q https://deno.land/x/makehelp/help.ts
 
 #: Build library into a bundle for distribution
 build: bundle.ts
